@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #444;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background: #666;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: white;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .table-section {
+            margin-top: 40px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background: #333;
+            color: white;
+        }
+
+        .form-section {
+            margin-top: 40px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background: #333;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #555;
+        }
+
+        footer {
+            margin-top: 40px;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Professional Website</h1>
+    <p>Built using Pure HTML & CSS</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#table">Data</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero" id="home">
+    <h2>Welcome to My Website</h2>
+    <p>Create modern websites with HTML and CSS.</p>
+</section>
+
+<div class="container">
+
+    <section id="services">
+        <h2 style="text-align:center; margin-bottom:20px;">Our Services</h2>
+
+        <div class="cards">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x180" alt="Web Design">
+                <h3>Web Design</h3>
+                <p>Responsive and modern website designs.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/300x180" alt="Development">
+                <h3>Development</h3>
+                <p>Fast and optimized web applications.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/300x180" alt="Support">
+                <h3>Support</h3>
+                <p>24/7 customer and technical support.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="table-section" id="table">
+        <h2 style="text-align:center; margin-bottom:20px;">Employee Data</h2>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Salary</th>
+            </tr>
+
+            <tr>
+                <td>101</td>
+                <td>John</td>
+                <td>IT</td>
+                <td>$5000</td>
+            </tr>
+
+            <tr>
+                <td>102</td>
+                <td>Emma</td>
+                <td>HR</td>
+                <td>$4500</td>
+            </tr>
+
+            <tr>
+                <td>103</td>
+                <td>David</td>
+                <td>Finance</td>
+                <td>$6000</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="form-section" id="contact">
+        <h2>Contact Us</h2>
+
+        <form>
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Message</label>
+            <textarea rows="5" placeholder="Write your message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 My Professional Website. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
